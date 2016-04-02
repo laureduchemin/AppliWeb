@@ -9,13 +9,17 @@
 </head>
 <body>
 
-<div id="bandeau"><p align="center"><font size="3" face="cursive" color="black"><b>Astuces Neko Atsume</b></font></p></div>
+<div id="bandeau"><p align="center"><font size="5" face="cursive" color="black"><b>Astuces Neko Atsume</b></font></p></div>
 <div id="menu">Menu</div>
 <div id="contenu">
 
+<font size= 4 face="cursive"> Détails chat
+</font><br>
+<br>
+
 <table border=1 cellpadding=3 cellspacing=1>
 <tr>
-<td width=70 rowspan=4><img src="snowball.png"></td>
+<td width=150 rowspan=4><img src="snowball.png"></td>
 <td>Nom Anglais</td>
 <td>Nom Japonais</td>
 </tr>
