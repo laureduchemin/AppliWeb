@@ -18,7 +18,7 @@ import javax.servlet.http.HttpSession;
 public class Deconnexion extends HttpServlet {
 
 	
-	public static final String VUE = "/connexion";
+	public static final String VUE = "WEB-INF/PageConnexion.jsp";
 	
 	/**
 	 * Mettre lien de redirection
