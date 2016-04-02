@@ -21,9 +21,7 @@ import com.form.TraitementInscription;
 
 public class PageInscription extends HttpServlet {
 	
-	/**
-	 * 
-	 */
+
 	private static final long serialVersionUID = 1L;
 	public static final String VUE = "/WEB-INF/PageInscription.jsp";
 	public static final String ATT_USER = "utilisateur";
