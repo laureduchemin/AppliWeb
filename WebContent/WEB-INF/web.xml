@@ -41,6 +41,16 @@
     <servlet-name>Deconnexion</servlet-name>
     <url-pattern>/deconnexion</url-pattern>
 </servlet-mapping>
+
+    <servlet>
+    <servlet-name>PageChat</servlet-name>
+    <servlet-class>com.servlets.PageChat</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>PageChat</servlet-name>
+    <url-pattern>/PageChat</url-pattern>
+</servlet-mapping>
     
     
   
