@@ -9,4 +9,17 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  
+  <display-name>My web application</display-name>
+  
+  <servlet>
+<servlet-name>PageInscription</servlet-name>
+<servlet-class>com.servlets.PageInscription</servlet-class>
+</servlet>
+
+<servlet-mapping>
+        <servlet-name>PageInscription</servlet-name>
+        <url-pattern>/PageInscription</url-pattern>
+    </servlet-mapping>
+  
 </web-app>
