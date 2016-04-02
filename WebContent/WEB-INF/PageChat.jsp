@@ -13,8 +13,7 @@
 <div id="menu">Menu</div>
 <div id="contenu">
 
-<font size= 4 face="cursive"> Détails chat
-</font><br>
+<font size= 4 face="cursive"> Détails chat </font><br>
 <br>
 
 <table border=1 cellpadding=3 cellspacing=1>
