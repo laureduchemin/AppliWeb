@@ -47,6 +47,8 @@ Menu
 
 </table>
 
+<A HREF="http://localhost:8080/AppliWeb/PageEditProfil">Editer profil</A><br>
+
  <div id="piedpage"></div>
 
 </div>

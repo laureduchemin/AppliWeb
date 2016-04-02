@@ -25,6 +25,9 @@ Menu
 </div>
 
 <div id="contenu">
+
+<font size= 4 face="cursive"> Inscription </font><br>
+<br>
 <form method="post" action="inscription">
             <fieldset>
                 <legend>Inscription</legend>

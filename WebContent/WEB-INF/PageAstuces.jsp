@@ -26,7 +26,7 @@ Menu
 
 <div id="contenu">
 
-<font size= 4 face="cursive"> Astuce </font><br>
+<font size= 4 face="cursive"> Accueil </font><br>
 <br>
 
 <table border=1 cellpadding=3 cellspacing=1>
