@@ -17,9 +17,9 @@ Menu
 </font>
 <font size="2" face="cursive" color="black">
 <ul>
- <li>Accueil</li>
- <li>Liste des chats</li>
- <li>Connexion</li>
+<li><A HREF="http://localhost:8080/AppliWeb/PageAstuces">Accueil</A></li>
+ <li><A HREF="http://localhost:8080/AppliWeb/PageListeChat">Liste des chats</A></li>
+ <li><A HREF="http://localhost:8080/AppliWeb/PageConnexion">Connexion</A></li>
 </ul> 
 </font>
 </div>
