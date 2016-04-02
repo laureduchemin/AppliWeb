@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Page Chat</title>
+<title>Page Astuces</title>
 <link type="text/css" rel="stylesheet" href="form.css" />
 </head>
 <body>
@@ -26,34 +26,29 @@ Menu
 
 <div id="contenu">
 
-<font size= 4 face="cursive"> Détails chat </font><br>
+<font size= 4 face="cursive"> Astuce </font><br>
 <br>
 
 <table border=1 cellpadding=3 cellspacing=1>
 <tr>
-<td width=150 rowspan=4><img src="snowball.png"></td>
+<td width=150 rowspan=3><img src="snowball.png"></td>
 <td>Nom Anglais</td>
-<td>Nom Japonais</td>
 </tr>
 
 <tr>
-<td>Niveau</td>
-<td>Personnalité</td>
+<td>Pseudo</td>
 </tr>
 
 <tr>
-<td>Caractéristiques</td>
-<td>Trésor</td>
-</tr>
-
-<tr>
-<td>Trésor Description</td>
+<td>Astuce</td>
 </tr>
 
 </table>
 
- <div id="piedpage"></div>
+
+
 
 </div>
+
 </body>
 </html>

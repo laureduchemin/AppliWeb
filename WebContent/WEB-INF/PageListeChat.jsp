@@ -10,7 +10,20 @@
 <body>
 
 <div id="bandeau"><p align="center"><font size="5" face="cursive" color="black"><b>Astuces Neko Atsume</b></font></p></div>
-<div id="menu">Menu</div>
+
+<div id="menu">
+<font size="4" face="cursive" color="black">
+Menu
+</font>
+<font size="2" face="cursive" color="black">
+<ul>
+ <li>Accueil</li>
+ <li>Liste des chats</li>
+ <li>Connexion</li>
+</ul> 
+</font>
+</div>
+
 <div id="contenu">
 
 <font size= 4 face="cursive"> Liste des chats </font><br>

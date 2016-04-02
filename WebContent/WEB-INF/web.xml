@@ -62,6 +62,15 @@
     <url-pattern>/PageListeChat</url-pattern>
 </servlet-mapping>
     
+        <servlet>
+    <servlet-name>PageAstuces</servlet-name>
+    <servlet-class>com.servlets.PageAstuces</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>PageAstuces</servlet-name>
+    <url-pattern>/PageAstuces</url-pattern>
+</servlet-mapping>
     
   
 </web-app>
