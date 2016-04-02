@@ -21,5 +21,17 @@
         <servlet-name>PageInscription</servlet-name>
         <url-pattern>/PageInscription</url-pattern>
     </servlet-mapping>
+    
+      <servlet>
+<servlet-name>PageConnexion</servlet-name>
+<servlet-class>com.servlets.Connexion</servlet-class>
+</servlet>
+
+<servlet-mapping>
+        <servlet-name>PageConnexion</servlet-name>
+        <url-pattern>/PageConnexion</url-pattern>
+    </servlet-mapping>
+    
+    
   
 </web-app>
