@@ -42,7 +42,7 @@ Menu
 
 <tr>
 <td>Mot de passe</td>
-<td>Changer</td>
+<td>étoile pour mdp crypté</td>
 </tr>
 
 </table>
