@@ -32,7 +32,7 @@ Menu
 <form method="post" action="inscription">
             <fieldset>
                 <legend>Editer</legend>
-                <p>Vous pouvez vous editer votre profil via ce formulaire.</p>
+                <p>Vous pouvez editer votre profil via ce formulaire.</p>
                 
                 <label for="pseudo">Pseudo <span class="requis">*</span></label>
                 <input type="text" id="pseudo" name="pseudo" value="" size="20" maxlength="20" />
