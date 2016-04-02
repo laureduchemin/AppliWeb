@@ -51,6 +51,16 @@
     <servlet-name>PageChat</servlet-name>
     <url-pattern>/PageChat</url-pattern>
 </servlet-mapping>
+
+    <servlet>
+    <servlet-name>PageListeChat</servlet-name>
+    <servlet-class>com.servlets.PageListeChat</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>PageListeChat</servlet-name>
+    <url-pattern>/PageListeChat</url-pattern>
+</servlet-mapping>
     
     
   
