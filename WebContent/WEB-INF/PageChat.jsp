@@ -4,6 +4,7 @@
         <%@page import="java.util.List"%>
     <%@page import="java.util.Iterator"%>
     <%@page import="com.beans.*"%>
+     <%@page import="com.ressources.*"%>
     
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -35,10 +36,11 @@ Menu
 <br>
 
 <%
+	String str = (String)request.getAttribute("nomChat");
 List<Chat> listeChat = (List<Chat>) request.getAttribute("listeChat");
 for(Iterator<Chat> it = listeChat.iterator(); it.hasNext(); ){
 	Chat chat = it.next();
-	out.println("<img src=/images/" + chat.getNomAnglais() +  ".png>");
+	out.println("<img src=images/" + chat.getNomAnglais().trim() +  ".png>");
 	out.println("<fieldset><table><tr><td> Nom Anglais </td><td>" + chat.getNomAnglais() + "</td></tr>");
 	out.println("<fieldset><table><tr><td> Nom Japonais </td><td>" + chat.getNomJaponais() + "</td></tr>");
 	out.println("<fieldset><table><tr><td> Personnalité </td><td>" + chat.getPersonnalite() + "</td></tr>");
@@ -46,10 +48,9 @@ for(Iterator<Chat> it = listeChat.iterator(); it.hasNext(); ){
 	out.println("<fieldset><table><tr><td> Caractéristiques </td><td>" + chat.getCaracteristiques() + "</td></tr>");
 	out.println("<fieldset><table><tr><td> Trésor </td><td>" + chat.getTresor() + "</td></tr>");
 	out.println("<fieldset><table><tr><td> Description du trésor </td><td>" + chat.getTresorDescription() + "</td></tr>");
-			
-			
+}	
 	out.print("</table></fieldset>");
-}
+
  %>
 
 

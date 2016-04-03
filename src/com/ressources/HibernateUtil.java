@@ -38,11 +38,14 @@ public class HibernateUtil {
     	List<Chat> listeChat = listeChat();
     	for(Iterator<Chat> it = listeChat.iterator(); it.hasNext(); ){
         	Chat chatProv = it.next();
-        	if(chatProv.getNomAnglais() == nom){
+        	if(chatProv.getNomAnglais().contains(nom)){
         		return chatProv;
         	}
 		}
 		return null;
+    }
+    public static void addUtilisateur(Utilisateur utilisateur){
+    	session.save(utilisateur);
     }
     
     
