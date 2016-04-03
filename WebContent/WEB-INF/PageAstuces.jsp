@@ -17,16 +17,16 @@ Menu
 </font>
 <font size="2" face="cursive" color="black">
 <ul>
- <li>Accueil</li>
- <li>Liste des chats</li>
- <li>Connexion</li>
+<li><A HREF="http://localhost:8080/AppliWeb/PageAstuces">Accueil</A></li>
+ <li><A HREF="http://localhost:8080/AppliWeb/PageListeChat">Liste des chats</A></li>
+ <li><A HREF="http://localhost:8080/AppliWeb/PageConnexion">Connexion</A></li>
 </ul> 
 </font>
 </div>
 
 <div id="contenu">
 
-<font size= 4 face="cursive"> Astuce </font><br>
+<font size= 4 face="cursive"> Accueil </font><br>
 <br>
 
 <table border=1 cellpadding=3 cellspacing=1>

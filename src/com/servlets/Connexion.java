@@ -28,6 +28,7 @@ public class Connexion extends HttpServlet {
     public static final String ATT_FORM = "form";
     public static final String ATT_SESSION_USER = "sessionUtilisateur";
     public static final String VUE = "/WEB-INF/PageConnexion.jsp";
+    public static final String VUE2 = "/WEB-INF/PageAstuces.jsp";
     
     public void doGet( HttpServletRequest request, HttpServletResponse response ) throws ServletException, IOException {
         /** Affichage de la page de connexion */
@@ -58,7 +59,7 @@ public class Connexion extends HttpServlet {
         request.setAttribute( ATT_FORM, form );
         request.setAttribute( ATT_USER, utilisateur );
 
-        this.getServletContext().getRequestDispatcher( VUE ).forward( request, response );
+        this.getServletContext().getRequestDispatcher( VUE2 ).forward( request, response );
     }
 
 }

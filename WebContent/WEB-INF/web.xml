@@ -71,6 +71,26 @@
     <servlet-name>PageAstuces</servlet-name>
     <url-pattern>/PageAstuces</url-pattern>
 </servlet-mapping>
+
+        <servlet>
+    <servlet-name>PageProfil</servlet-name>
+    <servlet-class>com.servlets.PageProfil</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>PageProfil</servlet-name>
+    <url-pattern>/PageProfil</url-pattern>
+</servlet-mapping>
+
+        <servlet>
+    <servlet-name>PageEditProfil</servlet-name>
+    <servlet-class>com.servlets.PageEditProfil</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>PageEditProfil</servlet-name>
+    <url-pattern>/PageEditProfil</url-pattern>
+</servlet-mapping>
     
   
 </web-app>

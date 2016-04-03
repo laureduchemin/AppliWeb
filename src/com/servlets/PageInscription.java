@@ -23,9 +23,14 @@ import com.form.TraitementInscription;
 public class PageInscription extends HttpServlet {
 	
 
-    public static final String ATT_USER = "utilisateur";
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	public static final String ATT_USER = "utilisateur";
     public static final String ATT_FORM = "form";
     public static final String VUE = "/WEB-INF/PageInscription.jsp";
+    
         
     public void doGet( HttpServletRequest request, HttpServletResponse response ) throws ServletException, IOException{
         /* Affichage de la page d'inscription */

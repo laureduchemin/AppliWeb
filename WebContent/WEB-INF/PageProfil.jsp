@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Liste des chats</title>
+<title>Profil</title>
 <link type="text/css" rel="stylesheet" href="form.css" />
 </head>
 <body>
@@ -26,12 +26,32 @@ Menu
 
 <div id="contenu">
 
-<font size= 4 face="cursive"> Liste des chats </font><br>
+<font size= 4 face="cursive"> Profil </font><br>
 <br>
 
-<img src="photo chat" align=middle > <A HREF="http://localhost:8080/AppliWeb/PageChat">Nom chat </A><p>
+<table border=1 cellpadding=3 cellspacing=1>
+<tr>
+<td>Pseudo</td>
+<td>Affichage Pseudo</td>
+</tr>
+
+<tr>
+<td>Email</td>
+<td>Affichage email</td>
+</tr>
+
+<tr>
+<td>Mot de passe</td>
+<td>étoile pour mdp crypté</td>
+</tr>
+
+</table>
+
+<A HREF="http://localhost:8080/AppliWeb/PageEditProfil">Editer profil</A><br>
 
  <div id="piedpage"></div>
+
+</div>
 
 </body>
 </html>
