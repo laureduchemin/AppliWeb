@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.beans.Chat" table="Chat">
+		<id name="nomAnglais" type="string" column="nomAnglais">
+			<generator class="assigned" />
+		</id>
+		<property name="nomJaponais">
+			<column name="nomJaponais" />
+		</property>
+		<property name="personnalite">
+			<column name="personnalite" />
+		</property>
+		<property name="niveau">
+			<column name="niveau" />
+		</property>
+		<property name="caracteristiques">
+			<column name="caracteristiques" />
+		</property>
+		<property name="tresor">
+			<column name="tresor" />
+		</property>
+		<property name="tresorDescription">
+			<column name="tresorDescription" />
+		</property>
+		<property name="photo">
+			<column name="photo" />
+		</property>
+	</class>
+	<!--<class name="com.beans.Vote" table="Vote">
+		<composite-id>
+			<key-many-to-one class="com.beans.Vote" name="pseudo" column="pseudo" />
+			<key-many-to-one class="com.beans.Vote" name="astuce" column="astuce" />
+			<generator class="assigned" />
+		</composite-id>
+	</class>-->
+	<class name="com.beans.Astuce" table="Astuces">
+		<id name="astuce" type="string" column="astuce">
+			<generator class="assigned" />
+		</id>
+		<property name="nomChat">
+			<column name="nomChat" />
+		</property>
+		<property name="pseudoJoueur">
+			<column name="pseudoJoueur" />
+		</property>
+	</class>
+	
+	<class name="com.beans.Utilisateur" table="Utilisateur">
+		<id name="pseudo" type="string" column="pseudo">
+			<generator class="assigned" />
+		</id>
+		<property name="mdp">
+			<column name="mdp" />
+		</property>
+		<property name="type_utilisateur">
+			<column name="type_utilisateur" />
+		</property>
+		<property name="email">
+			<column name="email" />
+		</property>
+		<property name="banni">
+			<column name="banni" />
+		</property>
+	</class>
+</hibernate-mapping>
