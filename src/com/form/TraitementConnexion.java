@@ -63,7 +63,7 @@ public final class TraitementConnexion {
     }
     
     /**
-     * Valide l'adresse email saisie.
+     * Valide le pseudo saisie.
      */
     private void validationPseudo( String pseudo ) throws Exception {
         if ( pseudo != null ) {
