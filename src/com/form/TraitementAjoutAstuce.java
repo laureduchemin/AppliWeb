@@ -8,19 +8,20 @@ import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 
-import com.beans.Utilisateur;
+import com.beans.Astuce;
 
 /**
  * @author laureduchemin
  *
  */
-public final class TraitementConnexion {
-
+public final class TraitementAjoutAstuce {
+	
 	private static final String CHAMP_PSEUDO  = "pseudo";
-    private static final String CHAMP_PASS   = "mdp";
+    private static final String CHAMP_CHAT   = "nomanglais";
+    private static final String CHAMP_ASTUCE = "astuce";
     private String resultat;
     private Map<String, String> erreurs = new HashMap<String, String>();
-    
+  
     public String getResultat() {
         return resultat;
     }
@@ -29,37 +30,52 @@ public final class TraitementConnexion {
         return erreurs;
     }
     
-    public Utilisateur connecterUtilisateur( HttpServletRequest request ) {
-        /** Récupération des champs du formulaire */
+    public Astuce ajouterAstuce(HttpServletRequest request){
+    	
+    	/** Récupération des champs du formulaire */
         String pseudo = getValeurChamp( request, CHAMP_PSEUDO );
-        String mdp = getValeurChamp( request, CHAMP_PASS );
+        String nomanglais = getValeurChamp( request, CHAMP_CHAT );
+        String newastuce = getValeurChamp( request, CHAMP_ASTUCE );
 
-        Utilisateur utilisateur = new Utilisateur();
+        
 
-        /** Validation du champ pseudo. */
+        Astuce astuce = new Astuce();
+        
+        /** Validation du champ mot de pseudo. */
         try {
             validationPseudo( pseudo );
         } catch ( Exception e ) {
             setErreur( CHAMP_PSEUDO, e.getMessage() );
         }
-        utilisateur.setEmail( pseudo );
-
-        /** Validation du champ mot de passe. */
+        astuce.setPseudoJoueur( pseudo );
+        
+        /** Validation du champ mot de nom anglais chat. */
         try {
-            validationMotDePasse( mdp );
+            validationNomAnglais( nomanglais );
         } catch ( Exception e ) {
-            setErreur( CHAMP_PASS, e.getMessage() );
+            setErreur( CHAMP_CHAT, e.getMessage() );
         }
-        utilisateur.setMdp( mdp );
-
+        astuce.setNomChat( nomanglais );
+        
+        /** Validation du champ astuce. */
+        try {
+            validationAstuce( newastuce );
+        } catch ( Exception e ) {
+            setErreur( CHAMP_ASTUCE, e.getMessage() );
+        }
+        astuce.setAstuce( newastuce );
+        
+        
         /** Initialisation du résultat global de la validation. */
         if ( erreurs.isEmpty() ) {
             resultat = "Succès de la connexion.";
         } else {
             resultat = "Échec de la connexion.";
         }
-
-        return utilisateur;
+        
+  	    	return astuce;
+    	
+    	
     }
     
     /**
@@ -74,15 +90,23 @@ public final class TraitementConnexion {
     }
     
     /**
-     * Valide le mot de passe saisi.
+     * Valide le nom du chat saisi.
      */
-    private void validationMotDePasse( String motDePasse ) throws Exception {
-        if ( motDePasse != null ) {
-            if ( motDePasse.length() < 3 ) {
-                throw new Exception( "Le mot de passe doit contenir au moins 3 caractères." );
-            }
-        } else {
-            throw new Exception( "Merci de saisir votre mot de passe." );
+    private void validationNomAnglais( String nomanglais ) throws Exception {
+        if ( nomanglais != null ) {
+        	 if ( nomanglais.length() < 3 ) {
+            throw new Exception( "Merci de saisir un nom anglais de chat valide." );
+        }
+        }
+    }
+    
+    /**
+     * Valide l'astuce.
+     */
+    
+    private void validationAstuce( String astuce ) throws Exception {
+        if ( astuce != null && astuce.length() < 3 ) {
+            throw new Exception( "L'astuce doit contenir au moins 3 caractères." );
         }
     }
     
