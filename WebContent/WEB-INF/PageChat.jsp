@@ -1,5 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    
+        <%@page import="java.util.List"%>
+    <%@page import="java.util.Iterator"%>
+    <%@page import="com.beans.*"%>
+    
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -29,28 +34,24 @@ Menu
 <font size= 4 face="cursive"> Détails chat </font><br>
 <br>
 
-<table border=1 cellpadding=3 cellspacing=1>
-<tr>
-<td width=150 rowspan=4><img src="snowball.png"></td>
-<td>Nom Anglais</td>
-<td>Nom Japonais</td>
-</tr>
+<%
+List<Chat> listeChat = (List<Chat>) request.getAttribute("listeChat");
+for(Iterator<Chat> it = listeChat.iterator(); it.hasNext(); ){
+	Chat chat = it.next();
+	out.println("<img src=/images/" + chat.getNomAnglais() +  ".png>");
+	out.println("<fieldset><table><tr><td> Nom Anglais </td><td>" + chat.getNomAnglais() + "</td></tr>");
+	out.println("<fieldset><table><tr><td> Nom Japonais </td><td>" + chat.getNomJaponais() + "</td></tr>");
+	out.println("<fieldset><table><tr><td> Personnalité </td><td>" + chat.getPersonnalite() + "</td></tr>");
+	out.println("<fieldset><table><tr><td> Niveau </td><td>" + chat.getNiveau() + "</td></tr>");
+	out.println("<fieldset><table><tr><td> Caractéristiques </td><td>" + chat.getCaracteristiques() + "</td></tr>");
+	out.println("<fieldset><table><tr><td> Trésor </td><td>" + chat.getTresor() + "</td></tr>");
+	out.println("<fieldset><table><tr><td> Description du trésor </td><td>" + chat.getTresorDescription() + "</td></tr>");
+			
+			
+	out.print("</table></fieldset>");
+}
+ %>
 
-<tr>
-<td>Niveau</td>
-<td>Personnalité</td>
-</tr>
-
-<tr>
-<td>Caractéristiques</td>
-<td>Trésor</td>
-</tr>
-
-<tr>
-<td>Trésor Description</td>
-</tr>
-
-</table>
 
  <div id="piedpage"></div>
 
