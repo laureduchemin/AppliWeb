@@ -29,8 +29,14 @@ Menu
 <font size= 4 face="cursive"> Liste des chats </font><br>
 <br>
 
-<img src="photo_chat" align=middle > <A HREF="http://localhost:8080/AppliWeb/PageChat">Nom chat </A><p>
+<fieldset>
 
+                <label for="nomAnglais">Nom chat </label>
+
+
+
+
+</fieldset>
  <div id="piedpage"></div>
 
 </body>
