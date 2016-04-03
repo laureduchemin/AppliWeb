@@ -59,4 +59,20 @@ public class HibernateUtil {
 		}
 		return null;
     }
+    public static List<Astuce> listeAstuce(){
+    	session.getTransaction().commit();
+        Query query = session.createQuery("from Astuce");
+        List<Astuce> listeAstuce = query.list();
+		return listeAstuce;
+    }
+    public static Astuce getAstuce(String astuce){
+    	List<Astuce> listeAstuce = listeAstuce();
+    	for(Iterator<Astuce> it = listeAstuce.iterator(); it.hasNext(); ){
+        	Astuce astuceProv = it.next();
+        	if(astuceProv.getAstuce() == astuce){
+        		return astuceProv;
+        	}
+		}
+		return null;
+    }
 }
