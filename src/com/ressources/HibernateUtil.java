@@ -1,6 +1,7 @@
 package com.ressources;
 import com.beans.*;
 
+
 import java.util.Iterator;
 import java.util.List;
 
@@ -43,6 +44,8 @@ public class HibernateUtil {
 		}
 		return null;
     }
+    
+    
     public static List<Utilisateur> listeUtilisateur(){
     	session.getTransaction().commit();
         Query query = session.createQuery("from Utilisateur");

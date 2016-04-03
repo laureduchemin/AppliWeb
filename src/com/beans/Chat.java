@@ -5,12 +5,16 @@ package com.beans;
 
 import java.io.Serializable;
 
+
+
 /**
  * @author laureduchemin
  *
  *Classe Chat qui représente le modèle de donnée de la table chat
  *
  */
+
+
 public class Chat implements Serializable{
 	
 	/**
