@@ -36,7 +36,7 @@ Menu
 List<Chat> listeChat = (List<Chat>) request.getAttribute("listeChat");
 for(Iterator<Chat> it = listeChat.iterator(); it.hasNext(); ){
 	Chat chat = it.next();
-	out.print("<fieldset><table><tr><td> Nom Anglais </td><td><A HREF = http://localhost:8080/AppliWeb/" + chat.getNomAnglais() + ">" + chat.getNomAnglais() + " </A></td></tr>");
+	out.print("<fieldset><table><tr><td> Nom Anglais </td><td><A HREF = http://localhost:8080/AppliWeb/PageChat>" + chat.getNomAnglais() + " </A></td></tr>");
 
 			
 	out.print("</table></fieldset>");
