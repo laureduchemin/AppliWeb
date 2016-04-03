@@ -7,6 +7,7 @@ import java.util.List;
 
 import org.hibernate.Query;
 import org.hibernate.Session;
+import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
 import com.ressources.*;
@@ -45,7 +46,9 @@ public class HibernateUtil {
 		return null;
     }
     public static void addUtilisateur(Utilisateur utilisateur){
+    	Transaction tx = session.beginTransaction();
     	session.save(utilisateur);
+    	tx.commit();
     }
     
     

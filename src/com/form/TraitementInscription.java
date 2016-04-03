@@ -9,6 +9,7 @@ import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 
 import com.beans.Utilisateur;
+import com.ressources.HibernateUtil;
 
 /**
  * @author laureduchemin
@@ -67,7 +68,9 @@ public final class TraitementInscription {
         } else {
             resultat = "Échec de l'inscription.";
         }
-
+        utilisateur.setBanni(false);
+        utilisateur.setType_utilisateur("user");
+        HibernateUtil.addUtilisateur(utilisateur);
         return utilisateur;
         
     }
