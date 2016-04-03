@@ -36,7 +36,7 @@ public final class TraitementConnexion {
 
         Utilisateur utilisateur = new Utilisateur();
 
-        /** Validation du champ email. */
+        /** Validation du champ pseudo. */
         try {
             validationPseudo( pseudo );
         } catch ( Exception e ) {
