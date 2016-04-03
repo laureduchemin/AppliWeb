@@ -5,13 +5,6 @@ package com.servlets;
 
 import java.io.IOException;
 import java.util.List;
-<<<<<<< Updated upstream
-
-import com.beans.*;
-import com.ressources.*;
-=======
->>>>>>> Stashed changes
-
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
