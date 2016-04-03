@@ -1,5 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"
+    %>
+    <%@page import="java.util.List"%>
+    <%@page import="java.util.Iterator"%>
+    <%@page import="com.beans.*"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -28,15 +32,18 @@ Menu
 
 <font size= 4 face="cursive"> Liste des chats </font><br>
 <br>
+<%
+List<Chat> listeChat = (List<Chat>) request.getAttribute("listeChat");
+for(Iterator<Chat> it = listeChat.iterator(); it.hasNext(); ){
+	Chat chat = it.next();
+	out.print("<fieldset><table><tr><td> Nom Anglais </td><td>" + chat.getNomAnglais() + "</td></tr>");
+	
+			
+			
+	out.print("</table></fieldset>");
+}
+ %>
 
-<fieldset>
-
-                <label for="nomAnglais">Nom chat </label>
-
-
-
-
-</fieldset>
  <div id="piedpage"></div>
 
 </body>
