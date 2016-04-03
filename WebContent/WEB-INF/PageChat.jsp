@@ -25,6 +25,7 @@ Menu
 <ul>
 <li><A HREF="http://localhost:8080/AppliWeb/PageAstuces">Accueil</A></li>
  <li><A HREF="http://localhost:8080/AppliWeb/PageListeChat">Liste des chats</A></li>
+   <li><A HREF="http://localhost:8080/AppliWeb/AjoutAstuces">Ajouter une astuce</A></li>
  <li><A HREF="http://localhost:8080/AppliWeb/PageConnexion">Connexion</A></li>
 </ul> 
 </font>

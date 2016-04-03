@@ -22,15 +22,26 @@ div#bandeau {
 	height:50px;
 	background-color:#F5A9BC;
 	}
-div#contenu {
+	
+	div#contenu {
 	border: 1px #0568CD solid;
 	height:400px;
-	background-color:#FFCC00;
+	background-color:#FBEFF8;
+
 	}
+
+	
+	body {
+color:black;
+background-color:white;
+background-image:url(/images/fond.png);
+background-attachment:fixed;
+
+}
 	
 	div#menu {
 	float:left;
-	width:130px;
+	width:145px;
 	height:400px;
 	background-color:#FF6699;
 	}	

@@ -22,7 +22,7 @@ public class AjoutAstuces extends HttpServlet {
 	
 	private static final long serialVersionUID = 1L;
 	public static final String RED_LOGIN_USR = "/PageConnexion";
-	public static final String VUE = "/WEB-INF/PageProfil.jsp";
+	public static final String VUE = "/WEB-INF/AjoutAstuces.jsp";
 	public static final String ATT_SESSION_USER = "sessionUtilisateur";
     public static final String ATT_FORM = "form";
     public static final String ATT_ASTUCE = "astuce";
