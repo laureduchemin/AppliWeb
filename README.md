@@ -8,7 +8,7 @@ Sinon veuillez suivre les instructions :
 * La dernière étape est d'installer votre serveur d'applisation sur le logiciel de développement java que vous utiliserez pour lancer cette application.
 
 ## Installation du l'application web
-* Télécharger l'archive joint au mail ou la [télécharger d'ici] (https://github.com/laureduchemin/AppliWeb)
+* Télécharger l'archive jointe au mail ou la [télécharger d'ici] (https://github.com/laureduchemin/AppliWeb)
 * Décompresser l'archive
 * Récupérer la base de donnée de l'application nommée appliWeb dans le dossier ressource de l'application
 * Installer la base de donnée
